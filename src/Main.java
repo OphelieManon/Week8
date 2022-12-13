@@ -20,8 +20,9 @@ public class Main {
             address = scanner.nextLine();
             System.out.println("Enter age : ");
             age = Integer.parseInt(scanner.nextLine());
-           pw.println(name + " lives at " + address + " and is " + age + " years old ");
+            pw.println(name + " lives at " + address + " and is " + age + " years old ");
             System.out.println("Continue Y/N?");
+            pw.flush();
         } while (scanner.nextLine().charAt(0) == 'Y');
         pw.close();
 
